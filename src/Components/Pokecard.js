@@ -5,12 +5,9 @@ function getRandom(items) {
   return items[Math.floor(Math.random() * items.length)];
 }
 
-// let assetURL = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${currId}.png`;
-// let currId = this.props.id;
-
+// if ID contains only 1 or 2 digits, add 2 or 1 zeros before
 function formatNumber(num) {
   num = num.toString();
-  // if ID contains only 1 or 2 digits, add 2 or 1 zeros before
   num = num.padStart(3, "0");
   return num;
 }

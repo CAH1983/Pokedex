@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import Pokecard from "./Pokecard";
 import PokeList from "../Data/PokemonList";
 
-import "./Pokedex.css";
+import "./Pokehand.css";
 
-class Pokedex extends Component {
+class Pokehand extends Component {
   render() {
     return (
-      <div className="Pokedex">
+      <div className="Pokehand">
         <h1>Pokedex</h1>
-        <ul className="Pokedex-ul">
+        <ul className="Pokehand-ul">
           {PokeList.map((poke) => (
             <li key={poke.id}>
               <Pokecard
@@ -26,4 +26,4 @@ class Pokedex extends Component {
   }
 }
 
-export default Pokedex;
+export default Pokehand;
