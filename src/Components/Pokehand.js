@@ -4,14 +4,21 @@ import PokeList from "../Data/PokemonList";
 
 import "./Pokehand.css";
 
+const randomPokemons = PokeList.sort(() => Math.random() - Math.random()).slice(
+  0,
+  4
+);
+
 class Pokehand extends Component {
   render() {
     let playerName = this.props.player;
+    let totalPoints = 0;
+
     return (
       <div className="Pokehand">
         <h1>Player {playerName}</h1>
         <ul className="Pokehand-ul">
-          {PokeList.map((poke) => (
+          {randomPokemons.map((poke) => (
             <li key={poke.id}>
               <Pokecard
                 id={poke.id}
