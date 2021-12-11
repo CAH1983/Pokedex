@@ -13,6 +13,7 @@ class Pokedex extends Component {
           {PokeList.map((poke) => (
             <li key={poke.id}>
               <Pokecard
+                id={poke.id}
                 name={poke.name}
                 type={poke.type}
                 exp={poke.base_experience}
