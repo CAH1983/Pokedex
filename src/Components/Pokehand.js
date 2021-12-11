@@ -6,9 +6,10 @@ import "./Pokehand.css";
 
 class Pokehand extends Component {
   render() {
+    let playerName = this.props.player;
     return (
       <div className="Pokehand">
-        <h1>Pokedex</h1>
+        <h1>Player {playerName}</h1>
         <ul className="Pokehand-ul">
           {PokeList.map((poke) => (
             <li key={poke.id}>

@@ -4,8 +4,8 @@ import Pokehand from "./Components/Pokehand";
 function App() {
   return (
     <div className="App">
-      <Pokehand />
-      <Pokehand />
+      <Pokehand player="Tintin" />
+      <Pokehand player="Capitaine Haddock" />
     </div>
   );
 }
