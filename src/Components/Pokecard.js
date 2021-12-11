@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import "./Pokecard.css";
 
-function getRandom(items) {
-  return items[Math.floor(Math.random() * items.length)];
-}
-
 // if ID contains only 1 or 2 digits, add 2 or 1 zeros before
 function formatNumber(num) {
   num = num.toString();
