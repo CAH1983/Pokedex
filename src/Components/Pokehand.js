@@ -6,13 +6,12 @@ import "./Pokehand.css";
 
 class Pokehand extends Component {
   render() {
-    const { player, randomPoke } = this.props;
-
-    let totalPoints = 0;
+    const { player, randomPoke, score } = this.props;
 
     return (
       <div className="Pokehand">
         <h1>Player {player}</h1>
+        <h2> Score : {score}</h2>
         <ul className="Pokehand-ul">
           {randomPoke.map((poke) => (
             <li key={poke.id}>
