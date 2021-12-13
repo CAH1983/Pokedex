@@ -1,0 +1,21 @@
+.Pokehand {
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #7158bd;
+  width: 1600px;
+}
+
+.Pokehand-ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.Pokehand > h1 {
+  color: yellow;
+  align-self: flex-start;
+}

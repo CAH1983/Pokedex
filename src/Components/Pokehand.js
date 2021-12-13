@@ -12,18 +12,20 @@ class Pokehand extends Component {
       <div className="Pokehand">
         <h1>Player {player}</h1>
         <h2> Score : {score}</h2>
-        <ul className="Pokehand-ul">
-          {randomPoke.map((poke) => (
-            <li key={poke.id}>
-              <Pokecard
-                id={poke.id}
-                name={poke.name}
-                type={poke.type}
-                exp={poke.base_experience}
-              />
-            </li>
-          ))}
-        </ul>
+        <div className="Pokehand-ul-wrapper">
+          <ul className="Pokehand-ul">
+            {randomPoke.map((poke) => (
+              <li key={poke.id}>
+                <Pokecard
+                  id={poke.id}
+                  name={poke.name}
+                  type={poke.type}
+                  exp={poke.base_experience}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   }
