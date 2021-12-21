@@ -1,16 +1,21 @@
 import React, { Component } from "react";
 import Pokecard from "./Pokecard";
-import PokeList from "../Data/PokemonList";
 
 import "./Pokehand.css";
 
 class Pokehand extends Component {
   render() {
-    const { player, randomPoke, score } = this.props;
+    const { player, randomPoke, score, src } = this.props;
 
     return (
       <div className="Pokehand">
-        <h1>Player {player}</h1>
+        <h1>
+          {" "}
+          <span>
+            <img className="Pokehand-img" src={src} />
+          </span>
+          Player {player}
+        </h1>
         <h2> Score : {score}</h2>
         <div className="Pokehand-ul-wrapper">
           <ul className="Pokehand-ul">
