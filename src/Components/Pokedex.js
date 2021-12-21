@@ -23,27 +23,23 @@ let score2 = randomPokemons2.reduce(
   0
 );
 
-let msg;
-
 class Pokedex extends Component {
   render() {
-    // calculate scores for both players
-    score1 > score2 ? (msg = "Tintin wins") : (msg = "Capitaine Haddock wins");
-
     return (
       <div className="Pokedex">
-        <p>{msg}</p>
         <Pokehand
           randomPoke={randomPokemons1}
           player="Tintin"
           score={score1}
           src={Tintin}
+          isWinner={score1 > score2}
         />
         <Pokehand
           randomPoke={randomPokemons2}
           player="Capitaine Haddock"
           score={score2}
           src={Haddock}
+          isWinner={score2 > score1}
         />
       </div>
     );
